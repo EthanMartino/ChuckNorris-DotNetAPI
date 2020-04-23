@@ -34,17 +34,18 @@
             // 
             // jokeBtn
             // 
-            this.jokeBtn.Location = new System.Drawing.Point(38, 121);
+            this.jokeBtn.Location = new System.Drawing.Point(387, 122);
             this.jokeBtn.Name = "jokeBtn";
             this.jokeBtn.Size = new System.Drawing.Size(75, 23);
             this.jokeBtn.TabIndex = 0;
             this.jokeBtn.Text = "button1";
             this.jokeBtn.UseVisualStyleBackColor = true;
+            this.jokeBtn.Click += new System.EventHandler(this.jokeBtn_ClickAsync);
             // 
             // jokeLbl
             // 
             this.jokeLbl.AutoSize = true;
-            this.jokeLbl.Location = new System.Drawing.Point(60, 31);
+            this.jokeLbl.Location = new System.Drawing.Point(409, 32);
             this.jokeLbl.Name = "jokeLbl";
             this.jokeLbl.Size = new System.Drawing.Size(0, 13);
             this.jokeLbl.TabIndex = 1;
