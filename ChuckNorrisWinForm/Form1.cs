@@ -21,8 +21,21 @@ namespace ChuckNorrisWinForm
 
         private async void jokeBtn_ClickAsync(object sender, EventArgs e)
         {
+            if (categoriesCbx.SelectedIndex >=0)
+            {
+                string category = categoriesCbx.SelectedItem.ToString();
+            }
             Joke joke = await ChuckNorrisClient.GetRandomJoke();
             jokeLbl.Text = joke.JokeText;
+        }
+
+        private async void Form1_Load(object sender, EventArgs e)
+        {
+            IEnumerable<string> categories = await ChuckNorrisClient.GetCategories();
+            foreach (string category in categories)
+            {
+                categoriesCbx.Items.Add(category);
+            }
         }
     }
 }
