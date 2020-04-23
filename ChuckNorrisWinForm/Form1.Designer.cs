@@ -34,18 +34,18 @@
             // 
             // jokeBtn
             // 
-            this.jokeBtn.Location = new System.Drawing.Point(387, 122);
+            this.jokeBtn.Location = new System.Drawing.Point(180, 174);
             this.jokeBtn.Name = "jokeBtn";
-            this.jokeBtn.Size = new System.Drawing.Size(75, 23);
+            this.jokeBtn.Size = new System.Drawing.Size(113, 42);
             this.jokeBtn.TabIndex = 0;
-            this.jokeBtn.Text = "button1";
+            this.jokeBtn.Text = "Get Joke";
             this.jokeBtn.UseVisualStyleBackColor = true;
             this.jokeBtn.Click += new System.EventHandler(this.jokeBtn_ClickAsync);
             // 
             // jokeLbl
             // 
             this.jokeLbl.AutoSize = true;
-            this.jokeLbl.Location = new System.Drawing.Point(409, 32);
+            this.jokeLbl.Location = new System.Drawing.Point(57, 56);
             this.jokeLbl.Name = "jokeLbl";
             this.jokeLbl.Size = new System.Drawing.Size(0, 13);
             this.jokeLbl.TabIndex = 1;
@@ -54,7 +54,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 290);
+            this.ClientSize = new System.Drawing.Size(489, 286);
             this.Controls.Add(this.jokeLbl);
             this.Controls.Add(this.jokeBtn);
             this.Name = "Form1";
